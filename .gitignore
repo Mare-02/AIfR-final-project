@@ -1,0 +1,28 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# --- Virtuelle Umgebung ---
+# Nicht committen: enthaelt plattformspezifische Binaries (mujoco, fast-downward).
+# Reproduktion ueber SETUP.md + requirements.txt.
+.venv/
+venv/
+
+# --- macOS ---
+.DS_Store
+
+# --- Fremdmaterial (nicht unser Urheberrecht, nicht weiterverbreiten) ---
+# Beide sind frei verfuegbar, Quellen in SETUP.md dokumentiert:
+#   2606.19358v2.pdf  -> https://arxiv.org/abs/2606.19358
+#   final_projects.pdf -> Kursunterlage RWTH AI for Robotics SS2026
+2606.19358v2.pdf
+final_projects.pdf
+
+# --- Generierte Artefakte ---
+# PDDL-Problemdateien werden aus dem Benchmark erzeugt, nicht versioniert.
+out/
+results/
+*.log
