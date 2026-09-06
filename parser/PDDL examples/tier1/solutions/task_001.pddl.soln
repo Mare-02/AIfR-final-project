@@ -1,0 +1,4 @@
+(pick brick_1_4x2)
+(place brick_1_4x2)
+(pick brick_2_4x2)
+(stack brick_2_4x2 brick_1_4x2)
