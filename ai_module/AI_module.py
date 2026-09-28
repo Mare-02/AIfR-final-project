@@ -1,9 +1,9 @@
-import mujoco
-import yaml
+import mujoco 
+import yaml 
+from tampanda.controllers.position_controller import PositionController
+from scipy.spatial.transform import Rotation 
 from pathlib import Path
 import numpy as np
-from scipy.spatial.transform import Rotation
-from tampanda.controllers.position_controller import PositionController
 
 
 """
@@ -19,6 +19,7 @@ class LegoIK:
     def __init__(self, model, data):
         self.model = model
         self.data = data
+
         self.hand_id = mujoco.mj_name2id(
             model,
             mujoco.mjtObj.mjOBJ_BODY,
@@ -30,13 +31,21 @@ class LegoIK:
         mujoco.mj_forward(self.model, self.data)
 
     def solve(self, target_pos, target_quat=None):
+
         q_original = self.data.qpos[:7].copy()
         q = q_original.copy()
+
         position_only = target_quat is None
 
         if position_only:
-            mujoco.mj_forward(self.model, self.data)
-            target_quat = self.data.xquat[self.hand_id].copy()
+            mujoco.mj_forward(
+                self.model,
+                self.data,
+            )
+
+            target_quat = self.data.xquat[
+                self.hand_id
+            ].copy()
 
         q = np.clip(
             q,
@@ -45,40 +54,95 @@ class LegoIK:
         )
 
         for _ in range(200):
+
             self.data.qpos[:7] = q
-            mujoco.mj_forward(self.model, self.data)
 
-            current_pos = self.data.xpos[self.hand_id].copy()
-            current_rot = self.data.xmat[self.hand_id].reshape(3, 3)
+            mujoco.mj_forward(
+                self.model,
+                self.data,
+            )
 
-            pos_error = target_pos - current_pos
+            current_pos = self.data.xpos[
+                self.hand_id
+            ].copy()
+
+            current_rot = self.data.xmat[
+                self.hand_id
+            ].reshape(3, 3)
+
+            pos_error = (
+                target_pos - current_pos
+            )
 
             target_rot = np.zeros(9)
-            mujoco.mju_quat2Mat(target_rot, target_quat)
-            target_rot = target_rot.reshape(3, 3)
 
-            rot_error_mat = target_rot @ current_rot.T
+            mujoco.mju_quat2Mat(
+                target_rot,
+                target_quat,
+            )
+
+            target_rot = target_rot.reshape(
+                3, 3
+            )
+
+            rot_error_mat = (
+                target_rot @ current_rot.T
+            )
+
             rot_error = np.array([
-                rot_error_mat[2, 1] - rot_error_mat[1, 2],
-                rot_error_mat[0, 2] - rot_error_mat[2, 0],
-                rot_error_mat[1, 0] - rot_error_mat[0, 1],
+                rot_error_mat[2, 1]
+                - rot_error_mat[1, 2],
+
+                rot_error_mat[0, 2]
+                - rot_error_mat[2, 0],
+
+                rot_error_mat[1, 0]
+                - rot_error_mat[0, 1],
             ]) * 0.5
 
             if position_only:
-                if np.linalg.norm(pos_error) < 0.002:
+
+                if np.linalg.norm(
+                    pos_error
+                ) < 0.002:
+
                     result = q.copy()
+
                     self.data.qpos[:7] = q_original
-                    mujoco.mj_forward(self.model, self.data)
-                    return result
-            else:
-                if np.linalg.norm(pos_error) < 0.002 and np.linalg.norm(rot_error) < 0.02:
-                    result = q.copy()
-                    self.data.qpos[:7] = q_original
-                    mujoco.mj_forward(self.model, self.data)
+
+                    mujoco.mj_forward(
+                        self.model,
+                        self.data,
+                    )
+
                     return result
 
-            jac_pos = np.zeros((3, self.model.nv))
-            jac_rot = np.zeros((3, self.model.nv))
+            else:
+
+                if (
+                    np.linalg.norm(pos_error) < 0.002
+                    and
+                    np.linalg.norm(rot_error) < 0.02
+                ):
+
+                    result = q.copy()
+
+                    self.data.qpos[:7] = q_original
+
+                    mujoco.mj_forward(
+                        self.model,
+                        self.data,
+                    )
+
+                    return result
+
+            jac_pos = np.zeros(
+                (3, self.model.nv)
+            )
+
+            jac_rot = np.zeros(
+                (3, self.model.nv)
+            )
 
             mujoco.mj_jacBody(
                 self.model,
@@ -92,13 +156,24 @@ class LegoIK:
             J_rot = jac_rot[:, :7]
 
             if position_only:
+
                 J = J_pos
                 error = pos_error
+
             else:
-                J = np.vstack([J_pos, J_rot])
-                error = np.concatenate([pos_error, rot_error])
+
+                J = np.vstack([
+                    J_pos,
+                    J_rot,
+                ])
+
+                error = np.concatenate([
+                    pos_error,
+                    rot_error,
+                ])
 
             dq = np.linalg.pinv(J) @ error
+
             q += 0.3 * dq
 
             q = np.clip(
@@ -108,8 +183,14 @@ class LegoIK:
             )
 
         self.data.qpos[:7] = q_original
-        mujoco.mj_forward(self.model, self.data)
+
+        mujoco.mj_forward(
+            self.model,
+            self.data,
+        )
+
         return None
+
 
 
 class LegoTampanda:
@@ -138,11 +219,14 @@ class LegoTampanda:
         return True
 
 
+
+
 def convert_workbenchmark_yaml(input_yaml, output_yaml):
     with open(input_yaml, "r") as f:
         task = yaml.safe_load(f)
 
     blocks = []
+
     for block in task["blocks"]:
         p = block["pos"]
         r = block.get("rotation", [0, 0, 0])
@@ -170,11 +254,16 @@ def convert_workbenchmark_yaml(input_yaml, output_yaml):
     }
 
     with open(output_yaml, "w") as f:
-        yaml.safe_dump(converted, f, sort_keys=False)
+        yaml.safe_dump(
+            converted,
+            f,
+            sort_keys=False,
+        )
 
 
 def move_linear(env, q_goal, steps=50):
     q_start = env.data.qpos[:7].copy()
+
     step_size = np.linalg.norm(q_goal - q_start) / steps
 
     path = PositionController.interpolate_linear_points(
@@ -186,16 +275,20 @@ def move_linear(env, q_goal, steps=50):
     for q in path:
         action = env.data.ctrl.copy()
         action[:7] = q
+
         for _ in range(10):
             env.step(action)
 
 
 def move_vertical(env, start_pos, target_pos, quat, tampanda):
     steps = 50
+
     for pos in np.linspace(start_pos, target_pos, steps):
         q = tampanda.get_ik().solve(pos, quat)
+
         action = env.data.ctrl.copy()
         action[:7] = q
+
         for _ in range(10):
             env.step(action)
 
@@ -214,61 +307,178 @@ def get_brick_and_hand_pose(env, env_name):
 
 def get_place_target(env, item_pddl):
     parts = item_pddl.split("_")
-    benchmark_id = "_".join(parts[2:] + parts[:2])
+
+    benchmark_id = "_".join(
+        parts[2:] + parts[:2]
+    )
 
     target = next(
-        (t for t in env.episode_manifest["target_blocks"] if t["id"] == benchmark_id),
+        (
+            t
+            for t in env.episode_manifest["target_blocks"]
+            if t["id"] == benchmark_id
+        ),
         None,
     )
 
     if target is None:
+        print(
+            "PLACE: No target found for",
+            item_pddl,
+            "->",
+            benchmark_id,
+            flush=True,
+        )
         return None, None
 
-    target_pos = np.array(target["position"], dtype=float)
-    target_rot = Rotation.from_euler("z", target["yaw_rad"])
+    target_pos = np.array(
+        target["position"],
+        dtype=float,
+    )
+
+    target_rot = Rotation.from_euler(
+        "z",
+        target["yaw_rad"],
+    )
 
     return target_pos, target_rot
 
 
-def get_stack_target(env, item, support, name_mapping):
+
+def get_stack_target(
+    env,
+    item,
+    support,
+    name_mapping,
+):
     def to_benchmark_id(name):
         parts = name.split("_")
-        return "_".join(parts[2:] + parts[:2])
+        return "_".join(
+            parts[2:] + parts[:2]
+        )
+
+    # ------------------------------------------------------------
+    # Benchmark IDs
+    # ------------------------------------------------------------
 
     item_benchmark_id = to_benchmark_id(item)
     support_benchmark_id = to_benchmark_id(support)
 
+    # ------------------------------------------------------------
+    # Find benchmark targets
+    # ------------------------------------------------------------
+
     item_target = next(
-        (t for t in env.episode_manifest["target_blocks"] if t["id"] == item_benchmark_id),
+        (
+            t
+            for t in env.episode_manifest["target_blocks"]
+            if t["id"] == item_benchmark_id
+        ),
         None,
     )
 
     support_target = next(
-        (t for t in env.episode_manifest["target_blocks"] if t["id"] == support_benchmark_id),
+        (
+            t
+            for t in env.episode_manifest["target_blocks"]
+            if t["id"] == support_benchmark_id
+        ),
         None,
     )
 
-    if item_target is None or support_target is None:
+    if item_target is None:
+        print(
+            "STACK: No target found for",
+            item,
+            "->",
+            item_benchmark_id,
+            flush=True,
+        )
         return None, None
 
-    item_target_pos = np.array(item_target["position"], dtype=float)
-    item_target_rot = Rotation.from_euler("z", item_target["yaw_rad"])
+    if support_target is None:
+        print(
+            "STACK: No target found for support",
+            support,
+            "->",
+            support_benchmark_id,
+            flush=True,
+        )
+        return None, None
 
-    support_target_pos = np.array(support_target["position"], dtype=float)
-    support_target_rot = Rotation.from_euler("z", support_target["yaw_rad"])
+    # ------------------------------------------------------------
+    # Benchmark poses
+    # ------------------------------------------------------------
 
-    relative_pos = support_target_rot.inv().apply(item_target_pos - support_target_pos)
-    relative_rot = support_target_rot.inv() * item_target_rot
+    item_target_pos = np.array(
+        item_target["position"],
+        dtype=float,
+    )
+
+    item_target_rot = Rotation.from_euler(
+        "z",
+        item_target["yaw_rad"],
+    )
+
+    support_target_pos = np.array(
+        support_target["position"],
+        dtype=float,
+    )
+
+    support_target_rot = Rotation.from_euler(
+        "z",
+        support_target["yaw_rad"],
+    )
+
+    # ------------------------------------------------------------
+    # Item relative to support in benchmark
+    # ------------------------------------------------------------
+
+    relative_pos = support_target_rot.inv().apply(
+        item_target_pos - support_target_pos
+    )
+
+    relative_rot = (
+        support_target_rot.inv()
+        * item_target_rot
+    )
+
+    # ------------------------------------------------------------
+    # Actual support pose in MuJoCo
+    # ------------------------------------------------------------
 
     support_body = name_mapping[support]
-    actual_support_pos = env.data.body(support_body).xpos.copy()
-    actual_support_quat = env.data.body(support_body).xquat.copy()
-    actual_support_rot = Rotation.from_quat(actual_support_quat[[1, 2, 3, 0]])
 
-    target_pos = actual_support_pos + actual_support_rot.apply(relative_pos)
-    target_rot = actual_support_rot * relative_rot
+    actual_support_pos = (
+        env.data.body(support_body).xpos.copy()
+    )
+
+    actual_support_quat = (
+        env.data.body(support_body).xquat.copy()
+    )
+
+    actual_support_rot = Rotation.from_quat(
+        actual_support_quat[[1, 2, 3, 0]]
+    )
+
+    # ------------------------------------------------------------
+    # Apply benchmark relation to actual support
+    # ------------------------------------------------------------
+
+    target_pos = (
+        actual_support_pos
+        + actual_support_rot.apply(
+            relative_pos
+        )
+    )
+
+    target_rot = (
+        actual_support_rot
+        * relative_rot
+    )
 
     return target_pos, target_rot
+
 
 
 def place_at(
@@ -286,39 +496,100 @@ def place_at(
 ):
     env_name = name_mapping[item]
 
-    # Target Position & Grasp Relation
-    actual_target_pos = np.array(target_pos, dtype=float).copy()
     relative_pos = held_relative_pos[item]
     relative_rot = held_relative_rot[item]
 
-    # Approach
-    desired_brick_approach_pos = actual_target_pos + np.array(approach_offset)
-    desired_hand_approach_pos = desired_brick_approach_pos + target_rot.apply(relative_pos)
-    desired_hand_rot = target_rot * relative_rot
-    desired_hand_quat = desired_hand_rot.as_quat()[[3, 0, 1, 2]]
+    # ---------------------------------------------------------
+    # APPROACH
+    # ---------------------------------------------------------
+
+    approximate_hand_pos = (
+        target_pos
+        + target_rot.apply(relative_pos)
+    )
+
+    approximate_hand_rot = (
+        target_rot * relative_rot
+    )
+
+    approximate_hand_quat = (
+        approximate_hand_rot.as_quat()[[3, 0, 1, 2]]
+    )
+
+    approach_pos = (
+        approximate_hand_pos
+        + approach_offset
+    )
 
     q_approach = tampanda.get_ik().solve(
-        desired_hand_approach_pos,
-        desired_hand_quat,
+        approach_pos,
+        approximate_hand_quat,
     )
 
     if q_approach is None:
+        print("PLACE: approach IK failed")
         return False
 
-    move_linear(env, q_approach)
+    move_linear(
+        env,
+        q_approach,
+    )
 
-    # Measure Actual Hand <-> Brick Relation
-    brick_pos, brick_quat, hand_pos, hand_quat = get_brick_and_hand_pose(env, env_name)
-    brick_rot = Rotation.from_quat(brick_quat[[1, 2, 3, 0]])
-    hand_rot = Rotation.from_quat(hand_quat[[1, 2, 3, 0]])
+    # ---------------------------------------------------------
+    # MEASURE ACTUAL HAND / BRICK RELATION
+    # ---------------------------------------------------------
 
-    actual_relative_pos = brick_rot.inv().apply(hand_pos - brick_pos)
-    actual_relative_rot = brick_rot.inv() * hand_rot
+    (
+        brick_pos,
+        brick_quat,
+        hand_pos,
+        hand_quat,
+    ) = get_brick_and_hand_pose(
+        env,
+        env_name,
+    )
 
-    # Corrected Approach
-    corrected_hand_pos = desired_brick_approach_pos + target_rot.apply(actual_relative_pos)
-    corrected_hand_rot = target_rot * actual_relative_rot
-    corrected_hand_quat = corrected_hand_rot.as_quat()[[3, 0, 1, 2]]
+    brick_rot = Rotation.from_quat(
+        brick_quat[[1, 2, 3, 0]]
+    )
+
+    hand_rot = Rotation.from_quat(
+        hand_quat[[1, 2, 3, 0]]
+    )
+
+    actual_relative_pos = (
+        brick_rot.inv().apply(
+            hand_pos - brick_pos
+        )
+    )
+
+    actual_relative_rot = (
+        brick_rot.inv()
+        * hand_rot
+    )
+
+    # ---------------------------------------------------------
+    # CORRECTED APPROACH
+    # ---------------------------------------------------------
+
+    desired_brick_pos = (
+        target_pos
+        + approach_offset
+    )
+
+    corrected_hand_pos = (
+        desired_brick_pos
+        + target_rot.apply(actual_relative_pos)
+    )
+
+    corrected_hand_rot = (
+        target_rot
+        * actual_relative_rot
+    )
+
+    corrected_hand_quat = (
+        corrected_hand_rot.as_quat()[[3, 0, 1, 2]]
+    )
 
     q_correct = tampanda.get_ik().solve(
         corrected_hand_pos,
@@ -326,46 +597,65 @@ def place_at(
     )
 
     if q_correct is None:
+        print("PLACE: correction IK failed")
         return False
 
-    move_linear(env, q_correct)
+    move_linear(
+        env,
+        q_correct,
+    )
 
-    # Final Target & Lowering
-    current_brick_pos, current_brick_quat, current_hand_pos, current_hand_quat = get_brick_and_hand_pose(env, env_name)
-    brick_error = actual_target_pos - current_brick_pos
-    
-    final_hand_pos = current_hand_pos.copy()
-    final_hand_pos[2] += brick_error[2]
+    # ---------------------------------------------------------
+    # LOWER TO FINAL TARGET
+    # ---------------------------------------------------------
+
+    final_hand_pos = (
+        target_pos
+        + target_rot.apply(actual_relative_pos)
+    )
 
     move_vertical(
         env,
-        current_hand_pos,
+        corrected_hand_pos,
         final_hand_pos,
-        current_hand_quat,
+        corrected_hand_quat,
         tampanda,
     )
 
-    # Open Gripper & Release
+    # ---------------------------------------------------------
+    # RELEASE
+    # ---------------------------------------------------------
+
     open_gripper(env)
 
-    start_pos = env.data.body(env_name).xpos.copy()
-    for _ in range(10):
-        env.step(env.data.ctrl.copy())
-        current_pos = env.data.body(env_name).xpos.copy()
-        delta = current_pos - start_pos
-        if np.linalg.norm(delta[:2]) > 0.01:
-            break
+    # ---------------------------------------------------------
+    # RETREAT
+    # ---------------------------------------------------------
 
-    # Retreat
-    actual_hand_pos = env.data.body("hand").xpos.copy()
-    retreat_target = actual_hand_pos + np.array([0.0, 0.0, 0.10])
+    actual_hand_pos = (
+        env.data.body("hand").xpos.copy()
+    )
+
+    retreat_target = (
+        actual_hand_pos
+        + approach_offset
+    )
 
     move_vertical(
         env,
         actual_hand_pos,
         retreat_target,
-        current_hand_quat,
+        corrected_hand_quat,
         tampanda,
+    )
+
+    # ---------------------------------------------------------
+    # HOME
+    # ---------------------------------------------------------
+
+    move_linear(
+        env,
+        HOME_Q,
     )
 
     return True

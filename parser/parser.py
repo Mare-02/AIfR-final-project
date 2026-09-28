@@ -1,5 +1,6 @@
 import yaml
 import os 
+from pathlib import Path
 
 
 HEIGHT_STEP = 0.0191
@@ -27,7 +28,7 @@ def block_rename(block_name: str):
     return block_name[4:] + "_" + block_name[:3]
 
 
-def get_brick_names(task: dict):
+def get_brick_names(yaml_path: Path, pddl_conversion=True):
     """
     Input:
     YAML task.
@@ -36,8 +37,12 @@ def get_brick_names(task: dict):
     String object.
     Format: (PDDL) Names of all bricks (letter first) and space inbetween names.
     """
+    with open(yaml_path, "r") as f:
+        task = yaml.safe_load(f)
+
     brick_set = [entry["name"] for entry in task["initial_blocks"]]
-    brick_set = list(map(block_rename, brick_set))
+    if pddl_conversion:
+        brick_set = list(map(block_rename, brick_set))
     
     return " ".join(brick_set)
 
@@ -153,7 +158,7 @@ def generate_template(
     ]
 
 
-def generate_pddl(input_path, output_path):
+def generate_pddl(input_path: Path, output_path: Path):
     # Read in YAML file.
     with open(input_path, "r") as f:
         yaml_task = yaml.safe_load(f)
@@ -161,7 +166,7 @@ def generate_pddl(input_path, output_path):
     # Get all values needed for the PDDL problem file.
     task_name = get_task_name(input_path)
     target = {b["name"]: b for b in yaml_task["blocks"]}
-    brick_names = get_brick_names(yaml_task)
+    brick_names = get_brick_names(input_path)
     inits = get_init(brick_names)
     goals = get_goals(brick_names, target) 
 
