@@ -1,0 +1,36 @@
+/* Print layout of the report: A4, four pages. */
+@page { size: A4; margin: 17mm 18mm 16mm 18mm; }
+html { font-size: 9.6pt; }
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.36; color: #0b0b0b; margin: 0; max-width: none;
+  hyphens: auto; -webkit-hyphens: auto;
+}
+header#title-block-header { text-align: center; margin-bottom: 7pt; }
+h1.title { font-size: 15pt; font-weight: 600; line-height: 1.2; margin: 0 0 3pt 0; }
+p.author, p.date { display: inline; font-size: 9.6pt; color: #52514e; margin: 0; }
+p.author:not(:last-of-type)::after { content: ", "; }
+p.subtitle { font-size: 9.6pt; color: #52514e; margin: 2pt 0 0 0; }
+h1 { font-size: 11.2pt; font-weight: 600; margin: 9pt 0 3pt 0; }
+h2 { font-size: 9.8pt; font-weight: 600; margin: 7pt 0 2pt 0; }
+h1, h2 { break-after: avoid; }
+p { margin: 0 0 4.5pt 0; text-align: justify; }
+ul, ol { margin: 0 0 4.5pt 0; padding-left: 13pt; }
+li { margin-bottom: 1.2pt; text-align: justify; }
+code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 8.4pt; }
+pre { background: #f6f6f3; border-radius: 3pt; padding: 4pt 6pt; margin: 3pt 0 6pt 0; line-height: 1.25; }
+pre code { font-size: 7.6pt; }
+table { border-collapse: collapse; width: 100%; margin: 3pt 0 3pt 0; font-size: 8.5pt; font-variant-numeric: tabular-nums; break-inside: avoid; }
+th { text-align: left; font-weight: 600; border-bottom: 0.7pt solid #898781; padding: 1.6pt 5pt 1.6pt 0; vertical-align: bottom; }
+td { border-bottom: 0.4pt solid #e1e0d9; padding: 1.6pt 5pt 1.6pt 0; vertical-align: top; }
+th:first-child, td:first-child { white-space: nowrap; padding-right: 10pt; }
+caption, .caption, figcaption { font-size: 8.3pt; color: #52514e; text-align: left; margin: 2pt 0 6pt 0; caption-side: bottom; }
+table caption { caption-side: top; margin: 5pt 0 2pt 0; }
+figure { margin: 4pt 0 2pt 0; break-inside: avoid; }
+figure img { display: block; }
+.figrow { display: flex; gap: 12pt; align-items: flex-end; break-inside: avoid; }
+.figrow figure { flex: 1; margin-top: 2pt; }
+.figrow img { width: 100%; }
+a { color: inherit; text-decoration: none; }
+.abstract { font-size: 9pt; color: #0b0b0b; margin: 0 14pt 6pt 14pt; }
+.note { font-size: 8.3pt; color: #52514e; }
