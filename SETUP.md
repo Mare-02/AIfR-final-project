@@ -1,29 +1,31 @@
 # PDDLego — Entwicklungsumgebung
 
-Schritt 0 des Projekts: reproduzierbare Umgebung für TAMPanda + PDDL-Planung.
-Verifiziert am 2026-07-30 unter macOS (arm64) mit Python 3.12.12.
+Reproduzierbare Umgebung für die Pipeline YAML → PDDL → Plan → Ausführung in
+`lego_sim`. Verifiziert am 2026-09-30 unter macOS (arm64) mit Python 3.12.12.
 
 ## Voraussetzungen
 
 - **Python ≥ 3.10** — TAMPanda verlangt das in `pyproject.toml`. Das System-Python
   von macOS (3.9.6) reicht **nicht**. Unter macOS: `brew install python@3.12`.
-- Ein lokaler Klon von **TAMPanda**. Bei Marian liegt er unter
-  `~/uni/Artificial Intelligence for Robotics/tampanda`.
-
-## Repo klonen
-
-Der Benchmark-Datensatz ist als **Submodul** eingebunden (gepinnt auf Commit
-`589b3b9`). Ohne `--recursive` bleibt `dataset/` leer:
+- Ein lokaler Klon von **TAMPanda**.
+- Ein lokaler Klon von **lego_sim** (die Simulationsumgebung, die wir anstelle
+  der noch nicht veröffentlichten WorkBenchMark-Umgebung verwenden):
 
 ```bash
-git clone --recursive <repo-url>
+git clone https://github.com/ma-haha-hehe/lego_sim.git ../lego_sim
 ```
 
-Schon geklont und `dataset/` ist leer? Dann nachziehen:
+Die Auswertung in `evaluation/` wurde mit lego_sim-Commit `326d572` erzeugt.
 
-```bash
-git submodule update --init --recursive
-```
+Die Anleitung geht davon aus, dass `tampanda/` und `lego_sim/` **neben** diesem
+Repo liegen. Andernfalls die Pfade unten anpassen.
+
+## Aufgaben
+
+Die 200 Aufgaben aus Tier 1 und Tier 2 liegen unter `Project/tasks/`. Es sind
+unveränderte Kopien von `ground_truth/tier1` und `ground_truth/tier2` aus
+https://github.com/WorkBenchMark/dataset (Commit `589b3b9`). Ein Submodul gibt
+es nicht mehr.
 
 ## Einrichtung
 
@@ -35,7 +37,7 @@ python3.12 -m venv .venv
 ./.venv/bin/python -m pip install --upgrade pip setuptools wheel
 ```
 
-TAMPanda editierbar installieren — **Pfad an den eigenen Klon anpassen**:
+TAMPanda editierbar installieren:
 
 ```bash
 ./.venv/bin/python -m pip install -e "../tampanda"
@@ -47,26 +49,29 @@ Restliche Abhängigkeiten:
 ./.venv/bin/python -m pip install -r requirements.txt
 ```
 
-## Verifikation
+`lego_sim` ist ein ROS-2-Paket und lässt sich nicht per `pip` installieren. Die
+direkte Python-API (`mj_bridge.gym_env.LegoBenchEnv`) braucht aber kein ROS; es
+genügt, das Paketverzeichnis in den Suchpfad der Umgebung einzutragen:
 
-Beide Skripte müssen fehlerfrei durchlaufen.
+```bash
+echo "$(cd ../lego_sim/src/mj_bridge && pwd)" > "$(./.venv/bin/python -c 'import site; print(site.getsitepackages()[0])')/lego_sim_mj_bridge.pth"
+```
+
+## Verifikation
 
 ```bash
 ./.venv/bin/python tools/check_env.py
 ```
 
-Prüft Versionen, listet die verfügbaren UPF-Engines, lässt `DomainBridge` die
-mitgelieferte Blocksworld-Domain parsen und löst ein Dreier-Stapel-Problem mit
-**beiden** Planern. Erwartete Ausgabe: je ein 4-Schritte-Plan für
-`fast-downward` und `pyperplan`.
+Prüft Versionen, listet die verfügbaren UPF-Engines und löst ein
+Blocksworld-Problem mit Fast Downward und pyperplan.
 
 ```bash
-./.venv/bin/python tools/check_mujoco.py
+./.venv/bin/python Project/main.py --tier 1 --task 001
 ```
 
-Baut die Blocks-Szene headless (32 bodies, 110 geoms), verdrahtet
-`make_blocks_bridge` ohne Executor und groundet den Zustand. Kein Fenster, keine
-Roboterbewegung.
+Plant und führt eine Aufgabe vollständig aus (ca. 35 s). Erwartete Ausgabe:
+`Success: True (2/2 bricks within tolerance)`.
 
 ## Nicht im Repo enthalten
 
@@ -83,25 +88,25 @@ Urheberrecht sind. Bei Bedarf lokal ablegen:
 ## Fallstricke
 
 - **`MUJOCO_GL=egl` schlägt unter macOS fehl.** Die Variable einfach nicht
-  setzen — der Standard funktioniert. `build_env()` öffnet von sich aus kein
-  Fenster; der Viewer ist ein separater `launch_viewer()`-Aufruf.
-- **`.venv/` gehört nicht ins Git-Repo.** Sobald das Repo steht, in
-  `.gitignore` aufnehmen.
+  setzen — der Standard funktioniert.
+- **lego_sim kopiert pro Lauf 33 MB Roboter-Meshes** in das Ausgabeverzeichnis.
+  `evaluate.py` löscht sie nach jedem Lauf wieder; wer `main.py` oft von Hand
+  startet, sollte `tmp/` gelegentlich leeren.
 - **`pip install -e` mit lokalem Pfad ist nicht portabel.** Deshalb steht
   TAMPanda bewusst nicht in `requirements.txt` — jede:r installiert den eigenen
   Klon von Hand.
+- **Die direkte Python-API von lego_sim hat keine Noppenklemmung.** Die steckt
+  nur in der ROS-2-Bridge (`mj_bridge3.py`). Ein losgelassener Stein hält
+  allein durch Schwerkraft und Kontakt. Was das für Tier 2 bedeutet, steht im
+  Bericht und lässt sich mit `Project/static_stability.py` nachmessen.
 
-## Was damit steht
+## Versionen
 
-| Komponente | Status |
+| Komponente | Version |
 |---|---|
-| TAMPanda 1.0.0 (editierbar) | ✅ |
-| MuJoCo 3.11.0, headless | ✅ |
-| unified-planning 1.3.0 | ✅ |
-| Fast Downward 0.5.2 | ✅ Plan verifiziert |
-| pyperplan 2.1 | ✅ Plan verifiziert |
-| `DomainBridge` PDDL → Plan | ✅ end-to-end |
-
-Die UPF-Anbindung aus dem Proposal ist damit **nicht mehr zu bauen** —
-`DomainBridge.plan()` erledigt sie bereits. Was bleibt: eigene PDDL-Domain,
-YAML→Problem-Parser, eigene Prädikat-Evaluatoren und Action-Executors.
+| TAMPanda | 1.0.0 (editierbar) |
+| lego_sim | Commit `326d572` |
+| MuJoCo | 3.11.0 |
+| unified-planning | 1.3.0 |
+| Fast Downward (`up-fast-downward`) | 0.5.2 |
+| pyperplan | 2.1 |

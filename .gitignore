@@ -22,7 +22,16 @@ venv/
 final_projects.pdf
 
 # --- Generierte Artefakte ---
-# PDDL-Problemdateien werden aus dem Benchmark erzeugt, nicht versioniert.
+# PDDL-Problemdateien und Laufverzeichnisse werden erzeugt, nicht versioniert.
 out/
 results/
+tmp/
+runs/
 *.log
+
+# Rohdaten der Auswertung: pro Lauf Szene, Manifest und Endzustand aus lego_sim.
+# Versioniert werden nur die Tabellen (results.csv/json, summary.md).
+evaluation/*/runs/
+
+# Zwischenprodukt des Berichts-Builds (report.md -> report.html -> report.pdf)
+report/report.html
