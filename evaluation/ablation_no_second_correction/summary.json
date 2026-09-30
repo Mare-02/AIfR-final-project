@@ -1,0 +1,23 @@
+[
+ {
+  "tier": 2,
+  "n": 80,
+  "planned": 80,
+  "planning_success_rate": 1.0,
+  "plan_length_mean": 5.8,
+  "plan_length_per_brick": 2.0,
+  "t_plan_mean_s": 0.04407811664996188,
+  "t_plan_median_s": 0.030188583501512767,
+  "t_plan_max_s": 0.21048125000015716,
+  "outcomes": {
+   "success": 70,
+   "stack failed": 9,
+   "out of tolerance": 1
+  },
+  "succeeded": 70,
+  "execution_success_rate": 0.875,
+  "bricks_placed_rate": 0.9181034482758621,
+  "sim_time_mean_s": 485.25000000114153,
+  "t_exec_mean_s": 74.65085117494996
+ }
+]

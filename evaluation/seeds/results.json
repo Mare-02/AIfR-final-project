@@ -1,0 +1,5768 @@
+[
+ {
+  "tier": 1,
+  "task": "001",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0026450000004842877,
+  "t_startup_s": 0.7688236670001061,
+  "t_plan_s": 0.025392916999408044,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 45.43637374999889,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.8282201593033244e-05,
+    "z_error_m": 0.00019934677645459808,
+    "yaw_error_deg": 0.03781161083404377
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010932539496229288,
+    "z_error_m": 0.0002993469290288181,
+    "yaw_error_deg": 0.04063193627182668
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "002",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.002451208001730265,
+  "t_startup_s": 0.8102370830019936,
+  "t_plan_s": 0.020446041999093723,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 33.52185416600332,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.248538156815864e-05,
+    "z_error_m": 0.00019997101950174068,
+    "yaw_error_deg": 0.0065717817958647964
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015839665646299013,
+    "z_error_m": 0.0002999420292140037,
+    "yaw_error_deg": 0.047243952995259235
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "003",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015384580001409631,
+  "t_startup_s": 0.806277791998582,
+  "t_plan_s": 0.03483724999750848,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 45.31288412499998,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.8282201593033244e-05,
+    "z_error_m": 0.00019934677645459808,
+    "yaw_error_deg": 0.03781161083404377
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010932539496229288,
+    "z_error_m": 0.0002993469290288181,
+    "yaw_error_deg": 0.04063193627182668
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "004",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016165409979294054,
+  "t_startup_s": 0.7778877920027298,
+  "t_plan_s": 0.028522666998469504,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 43.02650654100216,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "005",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0055199580019689165,
+  "t_startup_s": 0.7313368329996592,
+  "t_plan_s": 0.0243660420019296,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 43.38521224999931,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.8282201593033244e-05,
+    "z_error_m": 0.00019934677645459808,
+    "yaw_error_deg": 0.03781161083404377
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010932539496229288,
+    "z_error_m": 0.0002993469290288181,
+    "yaw_error_deg": 0.04063193627182668
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "006",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0034990419990208466,
+  "t_startup_s": 0.6789001670003927,
+  "t_plan_s": 0.02510154199990211,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 41.78356262500165,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "007",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0018261659970448818,
+  "t_startup_s": 0.6876222920000146,
+  "t_plan_s": 0.020970374996977625,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 44.408312916002615,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.8282201593033244e-05,
+    "z_error_m": 0.00019934677645459808,
+    "yaw_error_deg": 0.03781161083404377
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010932539496229288,
+    "z_error_m": 0.0002993469290288181,
+    "yaw_error_deg": 0.04063193627182668
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "008",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0033830000029411167,
+  "t_startup_s": 0.726778167001612,
+  "t_plan_s": 0.026720000001660082,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 33.074661291000666,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.248538156815864e-05,
+    "z_error_m": 0.00019997101950174068,
+    "yaw_error_deg": 0.0065717817958647964
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015839665646299013,
+    "z_error_m": 0.0002999420292140037,
+    "yaw_error_deg": 0.047243952995259235
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "009",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015232499972626101,
+  "t_startup_s": 0.6839597500002128,
+  "t_plan_s": 0.018187416997534456,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 41.74221250000119,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "010",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0017546250019222498,
+  "t_startup_s": 0.6795345419996011,
+  "t_plan_s": 0.018363292001595255,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.953815249999025,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.248538156815864e-05,
+    "z_error_m": 0.00019997101950174068,
+    "yaw_error_deg": 0.0065717817958647964
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015839665646299013,
+    "z_error_m": 0.0002999420292140037,
+    "yaw_error_deg": 0.047243952995259235
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "011",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.001518749999377178,
+  "t_startup_s": 0.6533394580001186,
+  "t_plan_s": 0.026517084002989577,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 32.210625790998165,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.248538156815864e-05,
+    "z_error_m": 0.00019997101950174068,
+    "yaw_error_deg": 0.0065717817958647964
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015839665646299013,
+    "z_error_m": 0.0002999420292140037,
+    "yaw_error_deg": 0.047243952995259235
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "012",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.001559207998070633,
+  "t_startup_s": 0.6866909579985077,
+  "t_plan_s": 0.022161916000186466,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 42.14621345799969,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "013",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015298750004149042,
+  "t_startup_s": 0.7180136249990028,
+  "t_plan_s": 0.017058458000974497,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 43.40987983300147,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.8282201593033244e-05,
+    "z_error_m": 0.00019934677645459808,
+    "yaw_error_deg": 0.03781161083404377
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010932539496229288,
+    "z_error_m": 0.0002993469290288181,
+    "yaw_error_deg": 0.04063193627182668
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "014",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0018197090030298568,
+  "t_startup_s": 0.7454897079987859,
+  "t_plan_s": 0.02939041599893244,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 41.63869587500085,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "015",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015364169994427357,
+  "t_startup_s": 0.6549485830000776,
+  "t_plan_s": 0.027526833000592887,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.98522633399989,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.248538156815864e-05,
+    "z_error_m": 0.00019997101950174068,
+    "yaw_error_deg": 0.0065717817958647964
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015839665646299013,
+    "z_error_m": 0.0002999420292140037,
+    "yaw_error_deg": 0.047243952995259235
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "016",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.001508875000581611,
+  "t_startup_s": 0.6765437920003023,
+  "t_plan_s": 0.021931333001703024,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 32.687628499999846,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.261687803733061e-05,
+    "z_error_m": 0.00019997102200595973,
+    "yaw_error_deg": 0.009045269534161784
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016985993875166455,
+    "z_error_m": 0.00029994202838407036,
+    "yaw_error_deg": 0.04833514304906349
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "017",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014848749997327104,
+  "t_startup_s": 0.6423699590013712,
+  "t_plan_s": 0.016672290999849793,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 41.793265500000416,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "018",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014877920002618339,
+  "t_startup_s": 0.6627266670002427,
+  "t_plan_s": 0.02372033300343901,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 42.3419117500016,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "019",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015408330000354908,
+  "t_startup_s": 0.707835334000265,
+  "t_plan_s": 0.03418045799844549,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 42.483157415997994,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013963817424658367,
+    "z_error_m": 0.00019998540620344563,
+    "yaw_error_deg": 0.46098574794893177
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012453634003768514,
+    "z_error_m": 0.0002984157825023648,
+    "yaw_error_deg": 0.42022095912355745
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "020",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015030829999886919,
+  "t_startup_s": 0.6901517080004851,
+  "t_plan_s": 0.031171125003311317,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 32.36310533300275,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.261687803733061e-05,
+    "z_error_m": 0.00019997102200595973,
+    "yaw_error_deg": 0.009045269534161784
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016985993875166455,
+    "z_error_m": 0.00029994202838407036,
+    "yaw_error_deg": 0.04833514304906349
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "001",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0025485000005573966,
+  "t_startup_s": 0.6842222920022323,
+  "t_plan_s": 0.04766695799844456,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 86.91274616699957,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013866626987127582,
+    "z_error_m": 0.0001999848716034286,
+    "yaw_error_deg": 0.49516119231424405
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00014888471823606316,
+    "z_error_m": 0.0002999453027476978,
+    "yaw_error_deg": 0.46514151472557
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015980005998189341,
+    "z_error_m": 0.00033132821134101986,
+    "yaw_error_deg": 0.6927662309294051
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "002",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0022749999989173375,
+  "t_startup_s": 0.6664129159980803,
+  "t_plan_s": 0.037807542001246475,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 90.79035270900204,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013561703748241465,
+    "z_error_m": 0.00019998482951105734,
+    "yaw_error_deg": 0.4938090704942646
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00027049384889599334,
+    "z_error_m": 0.0002999409322865104,
+    "yaw_error_deg": 0.534671542975684
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001993958275449018,
+    "z_error_m": 0.00033697463678702966,
+    "yaw_error_deg": 0.8798770422084474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "003",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002107084001181647,
+  "t_startup_s": 0.631331084001431,
+  "t_plan_s": 0.04143762499734294,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 83.49698408399854,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013866626987127582,
+    "z_error_m": 0.0001999848716034286,
+    "yaw_error_deg": 0.49516119231424405
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00014888471823606316,
+    "z_error_m": 0.0002999453027476978,
+    "yaw_error_deg": 0.46514151472558274
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015980005998189341,
+    "z_error_m": 0.00033132821134101986,
+    "yaw_error_deg": 0.6927662309293924
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "004",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.001690750003035646,
+  "t_startup_s": 0.7041970419995778,
+  "t_plan_s": 0.026552499999525025,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 44.29461537500174,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.484373881740758e-05,
+    "z_error_m": 0.00019998916746385986,
+    "yaw_error_deg": 0.08342583211572381
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015868195944868116,
+    "z_error_m": 0.0002995003538829727,
+    "yaw_error_deg": 0.1528035278046327
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "005",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002091375001327833,
+  "t_startup_s": 0.6642890000002808,
+  "t_plan_s": 0.031658166997658554,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 98.69479008399867,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.664036649011316e-05,
+    "z_error_m": 0.00019998479247865242,
+    "yaw_error_deg": 0.06430640525416584
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00018394232399457946,
+    "z_error_m": 0.0002999257138176087,
+    "yaw_error_deg": 0.1092012796341785
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0016279434434024343,
+    "z_error_m": 0.0003177371350261693,
+    "yaw_error_deg": 0.10754264762855845
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "006",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0020862499986833427,
+  "t_startup_s": 0.6401364170014858,
+  "t_plan_s": 0.04333479100023396,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 97.59233200000017,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.545421136213588e-05,
+    "z_error_m": 0.00019998484634795033,
+    "yaw_error_deg": 0.08528888241056029
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016722406857313445,
+    "z_error_m": 0.00029994911492338405,
+    "yaw_error_deg": 0.19450405644957722
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018564524184359456,
+    "z_error_m": 0.00033532520291137957,
+    "yaw_error_deg": 0.23828721822315466
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "007",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.005281124998873565,
+  "t_startup_s": 0.6920701249982812,
+  "t_plan_s": 0.03376120800021454,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 101.77561462500307,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.569734224504706e-05,
+    "z_error_m": 0.0001999848558721512,
+    "yaw_error_deg": 0.08183399968957286
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00012207089367618994,
+    "z_error_m": 0.00029994542323334705,
+    "yaw_error_deg": 0.00686103363578257
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015995894988947903,
+    "z_error_m": 0.00031097656441859967,
+    "yaw_error_deg": 0.15792793078033215
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "008",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002157041999453213,
+  "t_startup_s": 0.8987562500005879,
+  "t_plan_s": 0.041927375001250766,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 96.72501054199893,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.545421136213588e-05,
+    "z_error_m": 0.00019998484634795033,
+    "yaw_error_deg": 0.08528888241056029
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016722406857313445,
+    "z_error_m": 0.00029994911492338405,
+    "yaw_error_deg": 0.19450405644957722
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018564524184359456,
+    "z_error_m": 0.00033532520291137957,
+    "yaw_error_deg": 0.2382872182231674
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "009",
+  "seed": 0,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_4x2)",
+   "stack(brick_4_4x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.00291395900057978,
+  "t_startup_s": 0.6746303750005609,
+  "t_plan_s": 0.18710654100141255,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 8,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 4,
+  "total": 4,
+  "sim_time_s": 677.1999999978101,
+  "t_exec_s": 157.727522666999,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00012541265857857884,
+    "z_error_m": 0.00019997755984671461,
+    "yaw_error_deg": 0.4767287755311962
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00048609452234359883,
+    "z_error_m": 0.0003246313262631334,
+    "yaw_error_deg": 1.5702381217161419
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.002092225636232476,
+    "z_error_m": 0.00031910883046759597,
+    "yaw_error_deg": 1.7509367432253304
+   },
+   {
+    "id": "4x2_brick_4",
+    "success": true,
+    "xy_error_m": 0.0011313134215714263,
+    "z_error_m": 0.0003942519459488175,
+    "yaw_error_deg": 1.0267245571398347
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "010",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002141250002750894,
+  "t_startup_s": 0.6681566670013126,
+  "t_plan_s": 0.04193654199843877,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 98.22461491599825,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.777148630477314e-05,
+    "z_error_m": 0.0001999848478505678,
+    "yaw_error_deg": 0.07288260538104505
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00017055506964314699,
+    "z_error_m": 0.00029993264283084686,
+    "yaw_error_deg": 0.16881526407586858
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0007124819396426743,
+    "z_error_m": 0.0003999029980019386,
+    "yaw_error_deg": 0.2650027406575666
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "011",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0025114159980148543,
+  "t_startup_s": 0.7052155409983243,
+  "t_plan_s": 0.0224118339974666,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 36.31354624999949,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00014044893298595037,
+    "z_error_m": 0.00019998878281793364,
+    "yaw_error_deg": 0.48741999292776633
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002503241384315753,
+    "z_error_m": 0.0002999627864781057,
+    "yaw_error_deg": 0.48772636463905333
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "012",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0046894170009181835,
+  "t_startup_s": 0.7068072919973929,
+  "t_plan_s": 0.04761429199788836,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 104.06800837500123,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.664036649011316e-05,
+    "z_error_m": 0.00019998479247865242,
+    "yaw_error_deg": 0.06430640525416584
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00018394232399457946,
+    "z_error_m": 0.0002999257138176087,
+    "yaw_error_deg": 0.1092012796341785
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0016279434434024343,
+    "z_error_m": 0.0003177371350261693,
+    "yaw_error_deg": 0.10754264762854573
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "013",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014964580004743766,
+  "t_startup_s": 0.8702167080009531,
+  "t_plan_s": 0.024836374999722466,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.0000000008858,
+  "t_exec_s": 37.77393474999917,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.0001371283404687597,
+    "z_error_m": 0.00019998880248074669,
+    "yaw_error_deg": 0.460577106539003
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001744547367495469,
+    "z_error_m": 0.00029996639887840126,
+    "yaw_error_deg": 0.49555359068573845
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "014",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021635000011883676,
+  "t_startup_s": 0.6925131659991166,
+  "t_plan_s": 0.050053457998728845,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 100.68163545799689,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.545421136213588e-05,
+    "z_error_m": 0.00019998484634795033,
+    "yaw_error_deg": 0.08528888241056029
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016722406857313445,
+    "z_error_m": 0.00029994911492338405,
+    "yaw_error_deg": 0.19450405644957722
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018564524184359456,
+    "z_error_m": 0.00033532520291137957,
+    "yaw_error_deg": 0.2382872182231674
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "015",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002123750000464497,
+  "t_startup_s": 0.9633487499995681,
+  "t_plan_s": 0.04640095800277777,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 87.46554833299888,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00014514065822443268,
+    "z_error_m": 0.00019998273078758455,
+    "yaw_error_deg": 0.5542972409675349
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002249067237613243,
+    "z_error_m": 0.00029846730896095075,
+    "yaw_error_deg": 1.0544804775489782
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015811430886241323,
+    "z_error_m": 0.00031723486401159795,
+    "yaw_error_deg": 0.7530391215426815
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "016",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_4x2)",
+   "stack(brick_3_4x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002185833000112325,
+  "t_startup_s": 0.7296391669988225,
+  "t_plan_s": 0.03877612499854877,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 100.81859350000013,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.844455523924546e-05,
+    "z_error_m": 0.00019998151947323017,
+    "yaw_error_deg": 0.09296725830627639
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002268052524845419,
+    "z_error_m": 0.00029991801830642206,
+    "yaw_error_deg": 0.09860106921251743
+   },
+   {
+    "id": "4x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.00030578292537737753,
+    "z_error_m": 0.0003992940687271712,
+    "yaw_error_deg": 0.20997277601203929
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "017",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002178249997086823,
+  "t_startup_s": 0.6450344169970776,
+  "t_plan_s": 0.040756875001534354,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.40000000169465,
+  "t_exec_s": 87.12170866700035,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.0001367034878623214,
+    "z_error_m": 0.00019998486745433086,
+    "yaw_error_deg": 0.4646994700757555
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001822772323203367,
+    "z_error_m": 0.0002999451187392782,
+    "yaw_error_deg": 0.5182656194853529
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001961506988345255,
+    "z_error_m": 0.00033374541519094747,
+    "yaw_error_deg": 0.6216775369012194
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "018",
+  "seed": 0,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015375420007330831,
+  "t_startup_s": 0.7361942080024164,
+  "t_plan_s": 0.029067292001855094,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.0000000008858,
+  "t_exec_s": 38.297910042001604,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00013358364369852612,
+    "z_error_m": 0.00019998983852952124,
+    "yaw_error_deg": 0.4644607805818555
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00019676515495778375,
+    "z_error_m": 0.0002967517462705016,
+    "yaw_error_deg": 0.5385978881106515
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "019",
+  "seed": 0,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0031485420004173648,
+  "t_startup_s": 0.6945457080000779,
+  "t_plan_s": 0.04023858300206484,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 95.37406454200027,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.545421136213588e-05,
+    "z_error_m": 0.00019998484634795033,
+    "yaw_error_deg": 0.08528888241056029
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016722406857313445,
+    "z_error_m": 0.00029994911492338405,
+    "yaw_error_deg": 0.19450405644957722
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018564524184359456,
+    "z_error_m": 0.00033532520291137957,
+    "yaw_error_deg": 0.2382872182231674
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "020",
+  "seed": 0,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_2x2)",
+   "stack(brick_4_2x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.002853457997844089,
+  "t_startup_s": 0.6700179580002441,
+  "t_plan_s": 0.20322154200039222,
+  "executed": true,
+  "plan_completed": false,
+  "steps_executed": 7,
+  "failed_action": "stack(brick_4_2x2, brick_3_2x2)",
+  "failure_reason": "executor reported failure",
+  "success": false,
+  "placed": 2,
+  "total": 4,
+  "sim_time_s": 677.5999999978006,
+  "t_exec_s": 176.82437266700072,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00040230725228434627,
+    "z_error_m": 0.00019798009607664702,
+    "yaw_error_deg": 0.08435275942582725
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0007339327419902228,
+    "z_error_m": 0.0007092219820725582,
+    "yaw_error_deg": 0.1115581136717862
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": false,
+    "xy_error_m": 0.06746212061094675,
+    "z_error_m": 0.04820001452458266,
+    "yaw_error_deg": 41.68579156733125
+   },
+   {
+    "id": "2x2_brick_4",
+    "success": false,
+    "xy_error_m": 0.25211241044746213,
+    "z_error_m": 0.07730180873284984,
+    "yaw_error_deg": 31.39370091704875
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "001",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015102920006029308,
+  "t_startup_s": 0.6983917500001553,
+  "t_plan_s": 0.02795250000053784,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 47.22957787499763,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5842856169083694e-05,
+    "z_error_m": 0.00019998542054606994,
+    "yaw_error_deg": 0.10462293460327067
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 8.922012721806338e-05,
+    "z_error_m": 0.00029845153472427,
+    "yaw_error_deg": 0.04720465063212474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "002",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014745000007678755,
+  "t_startup_s": 0.6866682500003662,
+  "t_plan_s": 0.0223441250018368,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.263366875002248,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.57687834080808e-05,
+    "z_error_m": 0.00019997100697818904,
+    "yaw_error_deg": 0.17833056903041847
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015532916304610917,
+    "z_error_m": 0.0002999420176988121,
+    "yaw_error_deg": 0.16853617121414594
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "003",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015216659994621295,
+  "t_startup_s": 0.7342387079988839,
+  "t_plan_s": 0.01636079099989729,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 46.691959542000404,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5842856169083694e-05,
+    "z_error_m": 0.00019998542054606994,
+    "yaw_error_deg": 0.10462293460327067
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 8.922012721806338e-05,
+    "z_error_m": 0.00029845153472427,
+    "yaw_error_deg": 0.04720465063212474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "004",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015494170002057217,
+  "t_startup_s": 0.6261265000030107,
+  "t_plan_s": 0.02549383299992769,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.32212008299757,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "005",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016884579999896232,
+  "t_startup_s": 0.6941562079991854,
+  "t_plan_s": 0.026654207998944912,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 47.42543579199992,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5842856169083694e-05,
+    "z_error_m": 0.00019998542054606994,
+    "yaw_error_deg": 0.10462293460327067
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 8.922012721806338e-05,
+    "z_error_m": 0.00029845153472427,
+    "yaw_error_deg": 0.04720465063212474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "006",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016922499999054708,
+  "t_startup_s": 0.6733278749998135,
+  "t_plan_s": 0.022704875002091285,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.46426495800188,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "007",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014997090001998004,
+  "t_startup_s": 0.7604317500008619,
+  "t_plan_s": 0.029706041001190897,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 46.530675499998324,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5842856169083694e-05,
+    "z_error_m": 0.00019998542054606994,
+    "yaw_error_deg": 0.10462293460327067
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 8.922012721806338e-05,
+    "z_error_m": 0.00029845153472427,
+    "yaw_error_deg": 0.04720465063212474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "008",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015239580025081523,
+  "t_startup_s": 0.6329674590015202,
+  "t_plan_s": 0.02049591600007261,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.41613445799885,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.57687834080808e-05,
+    "z_error_m": 0.00019997100697818904,
+    "yaw_error_deg": 0.17833056903041847
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015532916304610917,
+    "z_error_m": 0.0002999420176988121,
+    "yaw_error_deg": 0.16853617121414594
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "009",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016770000001997687,
+  "t_startup_s": 0.6814854580006795,
+  "t_plan_s": 0.018170624996855622,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.489876833999006,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "010",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014897080000082497,
+  "t_startup_s": 0.6858391249988927,
+  "t_plan_s": 0.027368499999283813,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.85571145799986,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.57687834080808e-05,
+    "z_error_m": 0.00019997100697818904,
+    "yaw_error_deg": 0.17833056903041847
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015532916304610917,
+    "z_error_m": 0.0002999420176988121,
+    "yaw_error_deg": 0.16853617121414594
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "011",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014836669979558792,
+  "t_startup_s": 0.6748227909993147,
+  "t_plan_s": 0.017864000001281966,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.055723834000673,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.57687834080808e-05,
+    "z_error_m": 0.00019997100697818904,
+    "yaw_error_deg": 0.17833056903041847
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015532916304610917,
+    "z_error_m": 0.0002999420176988121,
+    "yaw_error_deg": 0.16853617121414594
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "012",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016257919996860437,
+  "t_startup_s": 0.6807359579979675,
+  "t_plan_s": 0.01659970900072949,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.708137750003516,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "013",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014206250016286504,
+  "t_startup_s": 0.8395411249985045,
+  "t_plan_s": 0.028174791998026194,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 47.347993208000844,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5842856169083694e-05,
+    "z_error_m": 0.00019998542054606994,
+    "yaw_error_deg": 0.10462293460327067
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 8.922012721806338e-05,
+    "z_error_m": 0.00029845153472427,
+    "yaw_error_deg": 0.04720465063212474
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "014",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015015409990155604,
+  "t_startup_s": 0.6644408749998547,
+  "t_plan_s": 0.024509833001502557,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.41878383400035,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "015",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014712090014654677,
+  "t_startup_s": 0.7471412919985596,
+  "t_plan_s": 0.03294066599846701,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.22136687499733,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.57687834080808e-05,
+    "z_error_m": 0.00019997100697818904,
+    "yaw_error_deg": 0.17833056903041847
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015532916304610917,
+    "z_error_m": 0.0002999420176988121,
+    "yaw_error_deg": 0.16853617121414594
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "016",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014840410003671423,
+  "t_startup_s": 0.6193287499991129,
+  "t_plan_s": 0.019339875001605833,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.815198667001823,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.576842027391212e-05,
+    "z_error_m": 0.00019997100704602366,
+    "yaw_error_deg": 0.1785019474843038
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015580153130341422,
+    "z_error_m": 0.0002999420176362927,
+    "yaw_error_deg": 0.16856662739794018
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "017",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014904580020811409,
+  "t_startup_s": 0.7343762499986042,
+  "t_plan_s": 0.018286750000697793,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 37.80833849999908,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "018",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015783339986228384,
+  "t_startup_s": 0.7435484170018754,
+  "t_plan_s": 0.028640249998716172,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 37.504727083000034,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "019",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.001650833000894636,
+  "t_startup_s": 0.6907864170025277,
+  "t_plan_s": 0.017769082998711383,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.732973457998014,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.000107114508880273,
+    "z_error_m": 0.00019998567867267336,
+    "yaw_error_deg": 0.5647282434949804
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013858031479978462,
+    "z_error_m": 0.0002962576290337082,
+    "yaw_error_deg": 0.2959484059722104
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "020",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0017073749986593612,
+  "t_startup_s": 0.7150092909978412,
+  "t_plan_s": 0.02881879200140247,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.328561042002548,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.576842027391212e-05,
+    "z_error_m": 0.00019997100704602366,
+    "yaw_error_deg": 0.1785019474843038
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015580153130341422,
+    "z_error_m": 0.0002999420176362927,
+    "yaw_error_deg": 0.16856662739794018
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "001",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.004194208002445521,
+  "t_startup_s": 0.8210099169991736,
+  "t_plan_s": 0.03377787499994156,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 91.04468991700196,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00011431978992862476,
+    "z_error_m": 0.00019998488109200518,
+    "yaw_error_deg": 0.5084535963839217
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00011403872432336762,
+    "z_error_m": 0.00029994153940614277,
+    "yaw_error_deg": 0.7985671370391693
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001638955675067795,
+    "z_error_m": 0.0003160130804507333,
+    "yaw_error_deg": 1.1078882397359398
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "002",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021070410002721474,
+  "t_startup_s": 0.7631217080015631,
+  "t_plan_s": 0.04990404099953594,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 86.85785020800176,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.724269631543394e-05,
+    "z_error_m": 0.0001999848329013315,
+    "yaw_error_deg": 0.5451307754368229
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00019637232853082277,
+    "z_error_m": 0.00029993572869839447,
+    "yaw_error_deg": 0.3129242921619268
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0019496035819114856,
+    "z_error_m": 0.0003349570756778636,
+    "yaw_error_deg": 0.4466672913290117
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "003",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0020723339985124767,
+  "t_startup_s": 0.7508422920000157,
+  "t_plan_s": 0.05639208299908205,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 94.3291603339967,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00011516250989588541,
+    "z_error_m": 0.00019998489841129008,
+    "yaw_error_deg": 0.5081245447363796
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00011651090112250194,
+    "z_error_m": 0.00029994254532925146,
+    "yaw_error_deg": 0.8150739089512409
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0016400542216329073,
+    "z_error_m": 0.0003159277606019778,
+    "yaw_error_deg": 1.1251559410883283
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "004",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0018230829991807695,
+  "t_startup_s": 0.6657244999987597,
+  "t_plan_s": 0.027971625000645872,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.4000000008877,
+  "t_exec_s": 37.99503362500036,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.811194859081038e-05,
+    "z_error_m": 0.00019940402399724888,
+    "yaw_error_deg": 0.01477234413408359
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010594278912779868,
+    "z_error_m": 0.000297661637340102,
+    "yaw_error_deg": 0.2833422216406082
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "005",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.004987167001672788,
+  "t_startup_s": 0.7537900829993305,
+  "t_plan_s": 0.06261150000136695,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 105.38545412500025,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.302169046608145e-05,
+    "z_error_m": 0.0001999848208047439,
+    "yaw_error_deg": 0.07319575666970435
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016530109122080697,
+    "z_error_m": 0.0002993472893907251,
+    "yaw_error_deg": 0.10890986316343734
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015590824121211437,
+    "z_error_m": 0.0003246971626637979,
+    "yaw_error_deg": 0.2965457475723649
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "006",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021743340003013145,
+  "t_startup_s": 0.8438969160015404,
+  "t_plan_s": 0.03502899999875808,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 101.54374041700066,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.303981716116124e-05,
+    "z_error_m": 0.0001999848469979304,
+    "yaw_error_deg": 0.07808982563059313
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00018960568513048031,
+    "z_error_m": 0.0002999311536453497,
+    "yaw_error_deg": 0.30673262168219484
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018284647654176127,
+    "z_error_m": 0.0003170462853935019,
+    "yaw_error_deg": 0.3785450821067307
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "007",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.005063415999757126,
+  "t_startup_s": 0.8124717919999966,
+  "t_plan_s": 0.03938279100111686,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 100.54278933400201,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.301134498155886e-05,
+    "z_error_m": 0.00019998487078400073,
+    "yaw_error_deg": 0.07323400065964411
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016135584615892842,
+    "z_error_m": 0.00029981923986796555,
+    "yaw_error_deg": 0.10931768569782174
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001557752910177707,
+    "z_error_m": 0.00032513488064075946,
+    "yaw_error_deg": 0.29780208438537514
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "008",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021029169984103646,
+  "t_startup_s": 0.6910169170005247,
+  "t_plan_s": 0.04333020800186205,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 99.32932133300346,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.269088543188074e-05,
+    "z_error_m": 0.00019998484708963482,
+    "yaw_error_deg": 0.07696535707062438
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.000191374703811569,
+    "z_error_m": 0.00029993222829495514,
+    "yaw_error_deg": 0.32453786716021304
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018277422330459118,
+    "z_error_m": 0.0003170218674358738,
+    "yaw_error_deg": 0.39726519566439106
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "009",
+  "seed": 1,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_4x2)",
+   "stack(brick_4_4x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.0028908340027555823,
+  "t_startup_s": 0.630932041000051,
+  "t_plan_s": 0.20098516599682625,
+  "executed": true,
+  "plan_completed": false,
+  "steps_executed": 7,
+  "failed_action": "stack(brick_4_4x2, brick_3_2x2)",
+  "failure_reason": "executor reported failure",
+  "success": false,
+  "placed": 2,
+  "total": 4,
+  "sim_time_s": 677.1999999978101,
+  "t_exec_s": 160.86748074999923,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00024342764684954544,
+    "z_error_m": 0.00019998421359955498,
+    "yaw_error_deg": 0.0762332571774995
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0003897733108542091,
+    "z_error_m": 0.00029873232617394496,
+    "yaw_error_deg": 1.2070880514665279
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": false,
+    "xy_error_m": 0.023449237620702786,
+    "z_error_m": 0.02045467176703708,
+    "yaw_error_deg": 0.8826017719521733
+   },
+   {
+    "id": "4x2_brick_4",
+    "success": false,
+    "xy_error_m": 0.0802189955404239,
+    "z_error_m": 0.06730002347675701,
+    "yaw_error_deg": 22.371026366320024
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "010",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002094999999826541,
+  "t_startup_s": 0.6802466670014837,
+  "t_plan_s": 0.04695737500151154,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 101.05100633300026,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.51918544094942e-05,
+    "z_error_m": 0.00019998480619905223,
+    "yaw_error_deg": 0.038262473483662164
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00017316874141164114,
+    "z_error_m": 0.00029993230924182934,
+    "yaw_error_deg": 0.2927532983762339
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.00016361845174509094,
+    "z_error_m": 0.00039842667148684563,
+    "yaw_error_deg": 0.20462403466865847
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "011",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.001800375001039356,
+  "t_startup_s": 0.6397388330005924,
+  "t_plan_s": 0.022323542001686292,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 34.36803404099919,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.610157598818234e-05,
+    "z_error_m": 0.00019998877363598677,
+    "yaw_error_deg": 0.5375788798868731
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00017763598886175793,
+    "z_error_m": 0.00029899321176166116,
+    "yaw_error_deg": 0.25774711545830153
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "012",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021151670007384382,
+  "t_startup_s": 0.6492904589977115,
+  "t_plan_s": 0.04578604099879158,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 100.40609766699708,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 8.301569029112243e-05,
+    "z_error_m": 0.0001999848711987523,
+    "yaw_error_deg": 0.07322663172873348
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001613759584059795,
+    "z_error_m": 0.00029981893419971095,
+    "yaw_error_deg": 0.11012757577272164
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015580720878743497,
+    "z_error_m": 0.0003251201851376534,
+    "yaw_error_deg": 0.29839754432036136
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "013",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015186250020633452,
+  "t_startup_s": 0.635021375001088,
+  "t_plan_s": 0.030166874999849824,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 33.9454375000023,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00011531965260021631,
+    "z_error_m": 0.0001969783403833747,
+    "yaw_error_deg": 0.5665884775497868
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001859684731092663,
+    "z_error_m": 0.00029694153002249313,
+    "yaw_error_deg": 0.7485196586725196
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "014",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0023064589986461215,
+  "t_startup_s": 0.6906505830011156,
+  "t_plan_s": 0.041653292002592934,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 101.38867954199668,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.269088543188074e-05,
+    "z_error_m": 0.00019998484708963482,
+    "yaw_error_deg": 0.07696535707062438
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.000191374703811569,
+    "z_error_m": 0.00029993222829495514,
+    "yaw_error_deg": 0.32453786716021304
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018277422330459118,
+    "z_error_m": 0.0003170218674358738,
+    "yaw_error_deg": 0.39726519566439106
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "015",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002224334002676187,
+  "t_startup_s": 0.7364638750004815,
+  "t_plan_s": 0.06836433399803354,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 78.45414495799923,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00014286075026196586,
+    "z_error_m": 0.0001999848232623891,
+    "yaw_error_deg": 0.7068004027769971
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001781698460374525,
+    "z_error_m": 0.000299937414257781,
+    "yaw_error_deg": 0.9622035162213778
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0014679381870314687,
+    "z_error_m": 0.0003088254706655885,
+    "yaw_error_deg": 0.951577176913793
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "016",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_4x2)",
+   "stack(brick_3_4x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0020923329975630622,
+  "t_startup_s": 0.813388999999006,
+  "t_plan_s": 0.035675874998560175,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 95.43791541600149,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.128211234028315e-05,
+    "z_error_m": 0.00019998145311718452,
+    "yaw_error_deg": 0.033342788699669605
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00017429248509548455,
+    "z_error_m": 0.00029991759501177273,
+    "yaw_error_deg": 0.327805295027415
+   },
+   {
+    "id": "4x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.00016884546652997805,
+    "z_error_m": 0.00039824262803339616,
+    "yaw_error_deg": 0.35603682484981236
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "017",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.004854499999055406,
+  "t_startup_s": 0.7246845000008761,
+  "t_plan_s": 0.053216583000903483,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 79.37056212499738,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.0001494990648905904,
+    "z_error_m": 0.00019998487554338806,
+    "yaw_error_deg": 0.6714780662195821
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00022501305081885095,
+    "z_error_m": 0.00029993654607159137,
+    "yaw_error_deg": 0.7759484272058562
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.002065798707720356,
+    "z_error_m": 0.00033489077909115705,
+    "yaw_error_deg": 0.7909841347628239
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "018",
+  "seed": 1,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015057919990795199,
+  "t_startup_s": 0.6694904169999063,
+  "t_plan_s": 0.020601167001586873,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 37.719321042000956,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 9.792057834541107e-05,
+    "z_error_m": 0.00019998891395958673,
+    "yaw_error_deg": 0.5280534688587368
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0001338633582131381,
+    "z_error_m": 0.0002962619491421459,
+    "yaw_error_deg": 0.9377366333622216
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "019",
+  "seed": 1,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021011669996369164,
+  "t_startup_s": 0.7605119580002793,
+  "t_plan_s": 0.03878141699897242,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 101.6430471249987,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.269088543188074e-05,
+    "z_error_m": 0.00019998484708963482,
+    "yaw_error_deg": 0.07696535707062438
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.000191374703811569,
+    "z_error_m": 0.00029993222829495514,
+    "yaw_error_deg": 0.32453786716021304
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018277422330459118,
+    "z_error_m": 0.0003170218674358738,
+    "yaw_error_deg": 0.39726519566439106
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "020",
+  "seed": 1,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_2x2)",
+   "stack(brick_4_2x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.0034136249996663537,
+  "t_startup_s": 0.6931864580001275,
+  "t_plan_s": 0.20496970800013514,
+  "executed": true,
+  "plan_completed": false,
+  "steps_executed": 7,
+  "failed_action": "stack(brick_4_2x2, brick_3_2x2)",
+  "failure_reason": "executor reported failure",
+  "success": false,
+  "placed": 2,
+  "total": 4,
+  "sim_time_s": 677.5999999978006,
+  "t_exec_s": 175.20954987500227,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.753276741494453e-05,
+    "z_error_m": 0.00019998699975347367,
+    "yaw_error_deg": 0.1829904198948876
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 6.750708515176172e-05,
+    "z_error_m": 0.00029903852130792885,
+    "yaw_error_deg": 0.18518960995482855
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": false,
+    "xy_error_m": 0.03842483639722053,
+    "z_error_m": 0.02948981908971013,
+    "yaw_error_deg": 1.8975080079678583
+   },
+   {
+    "id": "2x2_brick_4",
+    "success": false,
+    "xy_error_m": 0.05516524519155854,
+    "z_error_m": 0.0655472900772556,
+    "yaw_error_deg": 4.683939114693439
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "001",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.003563499998563202,
+  "t_startup_s": 0.7776593329981552,
+  "t_plan_s": 0.035598500002379296,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 43.34459391600103,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.3126669270571634e-05,
+    "z_error_m": 0.00019998551102591577,
+    "yaw_error_deg": 0.09134638242958817
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 5.086543854005509e-05,
+    "z_error_m": 0.0002999710221203572,
+    "yaw_error_deg": 0.028699264151701046
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "002",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014893340012349654,
+  "t_startup_s": 0.614511957999639,
+  "t_plan_s": 0.018296124999324093,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 32.11493066700132,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "003",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014986249989306089,
+  "t_startup_s": 0.6167261250011506,
+  "t_plan_s": 0.02268216599986772,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 44.18059712499962,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.3126669270571634e-05,
+    "z_error_m": 0.00019998551102591577,
+    "yaw_error_deg": 0.09134638242958817
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 5.086543854005509e-05,
+    "z_error_m": 0.0002999710221203572,
+    "yaw_error_deg": 0.028699264151701046
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "004",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0016322920018865261,
+  "t_startup_s": 0.6565521250013262,
+  "t_plan_s": 0.018389958000625484,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 39.779605375002575,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "005",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0026981250011886004,
+  "t_startup_s": 0.6765591670009599,
+  "t_plan_s": 0.020464124998397892,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 43.58661016699989,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.3126669270571634e-05,
+    "z_error_m": 0.00019998551102591577,
+    "yaw_error_deg": 0.09134638242958817
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 5.086543854005509e-05,
+    "z_error_m": 0.0002999710221203572,
+    "yaw_error_deg": 0.028699264151701046
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "006",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014905410025676247,
+  "t_startup_s": 0.6598546249988431,
+  "t_plan_s": 0.022959416997764492,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 39.47532091700123,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "007",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015230419994622935,
+  "t_startup_s": 0.6016262500015728,
+  "t_plan_s": 0.02485358300327789,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 42.667236834000505,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.3126669270571634e-05,
+    "z_error_m": 0.00019998551102591577,
+    "yaw_error_deg": 0.09134638242958817
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 5.086543854005509e-05,
+    "z_error_m": 0.0002999710221203572,
+    "yaw_error_deg": 0.028699264151701046
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "008",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014995830024417955,
+  "t_startup_s": 0.6542398339988722,
+  "t_plan_s": 0.027989458001684397,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 32.22367429199949,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "009",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015206250027404167,
+  "t_startup_s": 0.6175051669997629,
+  "t_plan_s": 0.021568750002188608,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 39.68641579200266,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "010",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014914999992470257,
+  "t_startup_s": 0.7724469169988879,
+  "t_plan_s": 0.019131707998894854,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 31.81031166699904,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "011",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015201250025711488,
+  "t_startup_s": 0.6480186669978139,
+  "t_plan_s": 0.01735329200164415,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 29.669631041000684,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "012",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015112090004549827,
+  "t_startup_s": 0.6820471249993716,
+  "t_plan_s": 0.027924709000217263,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 35.588803040998755,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "013",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014889170015521813,
+  "t_startup_s": 0.6096372079991852,
+  "t_plan_s": 0.01964412500092294,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 37.4102508750002,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.3126669270571634e-05,
+    "z_error_m": 0.00019998551102591577,
+    "yaw_error_deg": 0.09134638242958817
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 5.086543854005509e-05,
+    "z_error_m": 0.0002999710221203572,
+    "yaw_error_deg": 0.028699264151701046
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "014",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0017781659989850596,
+  "t_startup_s": 0.6104605830005312,
+  "t_plan_s": 0.0272149160009576,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 33.68018050000319,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "015",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015675419999752194,
+  "t_startup_s": 0.5774254159987322,
+  "t_plan_s": 0.023610791999089997,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 25.282585499997367,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "016",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0014431249983317684,
+  "t_startup_s": 0.5741313750004338,
+  "t_plan_s": 0.016144957997312304,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 24.63466729100037,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "017",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.002102291997289285,
+  "t_startup_s": 0.514994208002463,
+  "t_plan_s": 0.016573917000641814,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.251920791000884,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "018",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014573340013157576,
+  "t_startup_s": 0.526948041999276,
+  "t_plan_s": 0.017515209001430776,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 30.108023999997386,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "019",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_4x2)",
+   "stack(brick_2_4x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0017221669986611232,
+  "t_startup_s": 0.5084605000010924,
+  "t_plan_s": 0.017639333000261104,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 28.636628958000074,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.199014334761448e-05,
+    "z_error_m": 0.00019998562442770373,
+    "yaw_error_deg": 0.11037607913667007
+   },
+   {
+    "id": "4x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00010131331807241683,
+    "z_error_m": 0.00029674905819990216,
+    "yaw_error_deg": 0.09155058114272384
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 1,
+  "task": "020",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_2x2)",
+   "place(brick_1_2x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_2x2)"
+  ],
+  "t_parse_s": 0.0015082089994393755,
+  "t_startup_s": 0.5320800000008603,
+  "t_plan_s": 0.01661637500001234,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 22.724279916998057,
+  "blocks": [
+   {
+    "id": "2x2_brick_1",
+    "success": true,
+    "xy_error_m": 7.235283594041459e-05,
+    "z_error_m": 0.00019997138871530318,
+    "yaw_error_deg": 0.49984162731125925
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0002082170053073293,
+    "z_error_m": 0.00029592811280829134,
+    "yaw_error_deg": 0.8997565281508723
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "001",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0020843750025960617,
+  "t_startup_s": 0.4658100419983384,
+  "t_plan_s": 0.028554249998705927,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 66.7730394579994,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.31852649180144e-05,
+    "z_error_m": 0.0001999848616258959,
+    "yaw_error_deg": 0.05187473837614027
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016130376756928296,
+    "z_error_m": 0.00029994757045199993,
+    "yaw_error_deg": 0.025585221678830615
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015210485636299198,
+    "z_error_m": 0.000306638339106019,
+    "yaw_error_deg": 0.12078314820591923
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "002",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021891249998589046,
+  "t_startup_s": 0.4743586249969667,
+  "t_plan_s": 0.02824704199883854,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 66.09554399999979,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.983275682750993e-05,
+    "z_error_m": 0.00019998484302892472,
+    "yaw_error_deg": 0.03298427785951969
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00011678650545456376,
+    "z_error_m": 0.000299940953141703,
+    "yaw_error_deg": 0.06571603311944936
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0019534830266636264,
+    "z_error_m": 0.0003370418004243064,
+    "yaw_error_deg": 0.26699588209674957
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "003",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0021604159992421046,
+  "t_startup_s": 0.48093620800136705,
+  "t_plan_s": 0.028808250001020497,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 98.64387441700092,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.146253270794908e-05,
+    "z_error_m": 0.00019998481071684115,
+    "yaw_error_deg": 0.04607697308088573
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00017196485734210788,
+    "z_error_m": 0.0002999401999425194,
+    "yaw_error_deg": 0.05378299282038753
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0014476327843673585,
+    "z_error_m": 0.0003034564148989144,
+    "yaw_error_deg": 0.10808742077319795
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "004",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0014175000032992102,
+  "t_startup_s": 0.5007817920013622,
+  "t_plan_s": 0.016846124999574386,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 37.04691974999878,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.5201328411315716e-05,
+    "z_error_m": 0.0001999884756436615,
+    "yaw_error_deg": 0.07762918469962843
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00014436736137899792,
+    "z_error_m": 0.0002991329111682872,
+    "yaw_error_deg": 0.0985296053769353
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "005",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0022182920001796447,
+  "t_startup_s": 0.7876759589998983,
+  "t_plan_s": 0.03976016699743923,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 104.10645483400003,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.509669679677911e-05,
+    "z_error_m": 0.00019998485941442878,
+    "yaw_error_deg": 0.06615295127050581
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013965045406212132,
+    "z_error_m": 0.00029994069628498654,
+    "yaw_error_deg": 0.20873143973848501
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001576151018925524,
+    "z_error_m": 0.0003288418741459881,
+    "yaw_error_deg": 0.049306851623312206
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "006",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0022472089985967614,
+  "t_startup_s": 0.8007342079981754,
+  "t_plan_s": 0.04704779200255871,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 103.07661487500081,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.429908126386744e-05,
+    "z_error_m": 0.00019998484469703481,
+    "yaw_error_deg": 0.08727097180677962
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 9.042555882503581e-05,
+    "z_error_m": 0.00029994109797297497,
+    "yaw_error_deg": 0.10166332957915672
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018788095526377357,
+    "z_error_m": 0.0003335869124533042,
+    "yaw_error_deg": 0.0765534858875666
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "007",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0032649579989083577,
+  "t_startup_s": 0.8450767079993966,
+  "t_plan_s": 0.04372650000004796,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 101.7616451670001,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.7045822510498866e-05,
+    "z_error_m": 0.00019998485930036725,
+    "yaw_error_deg": 0.06758536651231395
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00014113565125767937,
+    "z_error_m": 0.0002999409830061195,
+    "yaw_error_deg": 0.18921275596940368
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0015842926890444133,
+    "z_error_m": 0.0003296047133815039,
+    "yaw_error_deg": 0.05046052186427631
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "008",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.005209416001889622,
+  "t_startup_s": 0.7481029170012334,
+  "t_plan_s": 0.05674666699997033,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 96.90643225000167,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.429908126386744e-05,
+    "z_error_m": 0.00019998484469703481,
+    "yaw_error_deg": 0.08727097180677962
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 9.042555882503581e-05,
+    "z_error_m": 0.00029994109797297497,
+    "yaw_error_deg": 0.10166332957915672
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018788095526377357,
+    "z_error_m": 0.0003335869124533042,
+    "yaw_error_deg": 0.0765534858875666
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "009",
+  "seed": 2,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_4x2)",
+   "stack(brick_4_4x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.005983458999253344,
+  "t_startup_s": 0.736925874996814,
+  "t_plan_s": 0.20866154200120945,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 8,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 4,
+  "total": 4,
+  "sim_time_s": 677.1999999978101,
+  "t_exec_s": 162.4390314170014,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.50168854891579e-05,
+    "z_error_m": 0.00019997758551680567,
+    "yaw_error_deg": 0.02280304663878951
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.0003268326277864284,
+    "z_error_m": 0.00032479572992862027,
+    "yaw_error_deg": 1.492038242816497
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0019385536423869025,
+    "z_error_m": 0.00031067072187629385,
+    "yaw_error_deg": 1.6848519375750468
+   },
+   {
+    "id": "4x2_brick_4",
+    "success": true,
+    "xy_error_m": 0.0009136639195660833,
+    "z_error_m": 0.0003823244603083087,
+    "yaw_error_deg": 0.12395879228753896
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "010",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0024357919974136166,
+  "t_startup_s": 0.6489037499995902,
+  "t_plan_s": 0.050351917001535185,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 91.66289254199728,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.4392058613513976e-05,
+    "z_error_m": 0.00019998483794304855,
+    "yaw_error_deg": 0.09758577139147792
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 9.695598793027908e-05,
+    "z_error_m": 0.0002999329126443795,
+    "yaw_error_deg": 0.1525101072785746
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0001020146545543621,
+    "z_error_m": 0.0003999039170947266,
+    "yaw_error_deg": 0.09223799237296779
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "011",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0030049589986447245,
+  "t_startup_s": 0.6703452920010022,
+  "t_plan_s": 0.020940792001056252,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 39.91082120899955,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.515580299189027e-05,
+    "z_error_m": 0.00019891844187741592,
+    "yaw_error_deg": 0.03129757566263655
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013433093073975878,
+    "z_error_m": 0.00029886660483945116,
+    "yaw_error_deg": 0.05658272591048065
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "012",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0022775830002501607,
+  "t_startup_s": 0.6397153750003781,
+  "t_plan_s": 0.04508591699777753,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 86.76924012499876,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.509669679677911e-05,
+    "z_error_m": 0.00019998485941442878,
+    "yaw_error_deg": 0.06615295127050581
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00013965045406212132,
+    "z_error_m": 0.00029994069628498654,
+    "yaw_error_deg": 0.20873143973848501
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.001576151018925524,
+    "z_error_m": 0.0003288418741459881,
+    "yaw_error_deg": 0.049306851623312206
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "013",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015263329987647012,
+  "t_startup_s": 0.6527672919983161,
+  "t_plan_s": 0.01680225000018254,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 38.61163079199832,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.477771151243788e-05,
+    "z_error_m": 0.00019998889555418453,
+    "yaw_error_deg": 0.018199619615665755
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016648013927892421,
+    "z_error_m": 0.0002963680615133135,
+    "yaw_error_deg": 0.06275952811417401
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "014",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.004578290998324519,
+  "t_startup_s": 0.6243990830007533,
+  "t_plan_s": 0.038311500000418164,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 83.6071511659975,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.429908126386744e-05,
+    "z_error_m": 0.00019998484469703481,
+    "yaw_error_deg": 0.08727097180677962
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 9.042555882503581e-05,
+    "z_error_m": 0.00029994109797297497,
+    "yaw_error_deg": 0.10166332957915672
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018788095526377357,
+    "z_error_m": 0.0003335869124533042,
+    "yaw_error_deg": 0.0765534858875666
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "015",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.00460262499836972,
+  "t_startup_s": 0.5697837500010792,
+  "t_plan_s": 0.029479332999471808,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 84.44725991700034,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.445684098254364e-05,
+    "z_error_m": 0.00019998484484147483,
+    "yaw_error_deg": 0.016126736561655405
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00016729914799557292,
+    "z_error_m": 0.0002999444382452837,
+    "yaw_error_deg": 0.012803990258004529
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.00158940654284981,
+    "z_error_m": 0.0003287571583842491,
+    "yaw_error_deg": 0.03755018850127728
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "016",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_4x2)",
+   "stack(brick_3_4x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002078875000734115,
+  "t_startup_s": 0.5930082080012653,
+  "t_plan_s": 0.03914749999967171,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 73.60496720900119,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 6.589161852602666e-05,
+    "z_error_m": 0.00019998146550027907,
+    "yaw_error_deg": 0.08871842036037735
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015806828103269219,
+    "z_error_m": 0.000299917618752088,
+    "yaw_error_deg": 0.1697889459463662
+   },
+   {
+    "id": "4x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.00019680313091818643,
+    "z_error_m": 0.0003982052475179909,
+    "yaw_error_deg": 0.17435048402096048
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "017",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.0020794580013898667,
+  "t_startup_s": 0.6074172919979901,
+  "t_plan_s": 0.03513879199817893,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 507.80000000169656,
+  "t_exec_s": 81.18020662500203,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.867721974789936e-05,
+    "z_error_m": 0.00019998485891847828,
+    "yaw_error_deg": 0.012003302659986516
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00015966696318190027,
+    "z_error_m": 0.0002999399114894802,
+    "yaw_error_deg": 0.04589788196112845
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0019771465754149847,
+    "z_error_m": 0.00033682571259173455,
+    "yaw_error_deg": 0.29662501396909285
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "018",
+  "seed": 2,
+  "n_bricks": 2,
+  "plan_found": true,
+  "plan_length": 4,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)"
+  ],
+  "t_parse_s": 0.0015041669976199046,
+  "t_startup_s": 0.5655889169975126,
+  "t_plan_s": 0.018779750000248896,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 4,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 2,
+  "total": 2,
+  "sim_time_s": 338.8000000008896,
+  "t_exec_s": 34.59435616599876,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 5.140753921984741e-05,
+    "z_error_m": 0.00019998881247126898,
+    "yaw_error_deg": 0.03637204630697088
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 0.00014411568301147377,
+    "z_error_m": 0.0002999629407493265,
+    "yaw_error_deg": 0.006254857346703169
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "019",
+  "seed": 2,
+  "n_bricks": 3,
+  "plan_found": true,
+  "plan_length": 6,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)"
+  ],
+  "t_parse_s": 0.002117542000632966,
+  "t_startup_s": 0.5636870000016643,
+  "t_plan_s": 0.0336961249995511,
+  "executed": true,
+  "plan_completed": true,
+  "steps_executed": 6,
+  "failed_action": null,
+  "failure_reason": null,
+  "success": true,
+  "placed": 3,
+  "total": 3,
+  "sim_time_s": 508.20000000169847,
+  "t_exec_s": 78.82319216600081,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 4.429908126386744e-05,
+    "z_error_m": 0.00019998484469703481,
+    "yaw_error_deg": 0.08727097180677962
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": true,
+    "xy_error_m": 9.042555882503581e-05,
+    "z_error_m": 0.00029994109797297497,
+    "yaw_error_deg": 0.10166332957915672
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": true,
+    "xy_error_m": 0.0018788095526377357,
+    "z_error_m": 0.0003335869124533042,
+    "yaw_error_deg": 0.0765534858875666
+   }
+  ],
+  "error": null
+ },
+ {
+  "tier": 2,
+  "task": "020",
+  "seed": 2,
+  "n_bricks": 4,
+  "plan_found": true,
+  "plan_length": 8,
+  "plan": [
+   "pick(brick_1_4x2)",
+   "place(brick_1_4x2)",
+   "pick(brick_2_2x2)",
+   "stack(brick_2_2x2, brick_1_4x2)",
+   "pick(brick_3_2x2)",
+   "stack(brick_3_2x2, brick_2_2x2)",
+   "pick(brick_4_2x2)",
+   "stack(brick_4_2x2, brick_3_2x2)"
+  ],
+  "t_parse_s": 0.005450874999951338,
+  "t_startup_s": 0.5731347919972904,
+  "t_plan_s": 0.17057550000026822,
+  "executed": true,
+  "plan_completed": false,
+  "steps_executed": 7,
+  "failed_action": "stack(brick_4_2x2, brick_3_2x2)",
+  "failure_reason": "executor reported failure",
+  "success": false,
+  "placed": 1,
+  "total": 4,
+  "sim_time_s": 677.5999999978006,
+  "t_exec_s": 134.27512608300094,
+  "blocks": [
+   {
+    "id": "4x2_brick_1",
+    "success": true,
+    "xy_error_m": 0.00557820508015698,
+    "z_error_m": 0.003999991140370751,
+    "yaw_error_deg": 6.192838582102087
+   },
+   {
+    "id": "2x2_brick_2",
+    "success": false,
+    "xy_error_m": 0.11763126768199708,
+    "z_error_m": 0.027600532796801545,
+    "yaw_error_deg": 20.556045219583464
+   },
+   {
+    "id": "2x2_brick_3",
+    "success": false,
+    "xy_error_m": 0.052302744653475536,
+    "z_error_m": 0.04820001469236638,
+    "yaw_error_deg": 28.868224229399832
+   },
+   {
+    "id": "2x2_brick_4",
+    "success": false,
+    "xy_error_m": 0.1182103805153597,
+    "z_error_m": 0.0633001332060954,
+    "yaw_error_deg": 0.882011468309543
+   }
+  ],
+  "error": null
+ }
+]

@@ -1,0 +1,41 @@
+[
+ {
+  "tier": 1,
+  "n": 60,
+  "planned": 60,
+  "planning_success_rate": 1.0,
+  "plan_length_mean": 4,
+  "plan_length_per_brick": 2.0,
+  "t_plan_mean_s": 0.023260072850219634,
+  "t_plan_median_s": 0.022693520500979503,
+  "t_plan_max_s": 0.035598500002379296,
+  "outcomes": {
+   "success": 60
+  },
+  "succeeded": 60,
+  "execution_success_rate": 1.0,
+  "bricks_placed_rate": 1.0,
+  "sim_time_mean_s": 338.76666666755614,
+  "t_exec_mean_s": 37.18653835826693
+ },
+ {
+  "tier": 2,
+  "n": 60,
+  "planned": 60,
+  "planning_success_rate": 1.0,
+  "plan_length_mean": 5.8,
+  "plan_length_per_brick": 2.0,
+  "t_plan_mean_s": 0.05385257986660387,
+  "t_plan_median_s": 0.039999374999752035,
+  "t_plan_max_s": 0.20866154200120945,
+  "outcomes": {
+   "success": 56,
+   "stack failed": 4
+  },
+  "succeeded": 56,
+  "execution_success_rate": 0.9333333333333333,
+  "bricks_placed_rate": 0.9482758620689655,
+  "sim_time_mean_s": 491.1000000011467,
+  "t_exec_mean_s": 88.36999369313331
+ }
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "tier": 1,
+  "n": 100,
+  "planned": 100,
+  "planning_success_rate": 1.0,
+  "plan_length_mean": 4,
+  "plan_length_per_brick": 2.0,
+  "t_plan_mean_s": 0.018756713289876645,
+  "t_plan_median_s": 0.017433083499781787,
+  "t_plan_max_s": 0.028768416999810142,
+  "outcomes": {
+   "planned": 100
+  }
+ },
+ {
+  "tier": 2,
+  "n": 100,
+  "planned": 100,
+  "planning_success_rate": 1.0,
+  "plan_length_mean": 6,
+  "plan_length_per_brick": 2.0,
+  "t_plan_mean_s": 0.051803543800087934,
+  "t_plan_median_s": 0.033037395998690045,
+  "t_plan_max_s": 0.15770229200279573,
+  "outcomes": {
+   "planned": 100
+  }
+ }
+]
