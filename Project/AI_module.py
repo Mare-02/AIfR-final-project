@@ -15,6 +15,27 @@ If LLM generated code is not allowed, please ignore this code during the grading
 """
 
 
+# Convergence thresholds of the inverse kinematics.
+# The previous 2 mm / 0.02 rad let every solved pose be off by up to 2 mm. That
+# is harmless for centre-aligned stacks but too coarse for a brick that rests on
+# only half of its support, where 2 mm decide whether it stays or tips over.
+IK_POS_TOL = 0.0002
+IK_ROT_TOL = 0.002
+IK_MAX_ITER = 500
+
+# Simulation steps spent on every waypoint of a motion (one step = 0.04 s).
+STEPS_PER_WAYPOINT = 10
+
+# Height above the seat at which the pose of the held brick is measured and
+# corrected a second time. 8 mm keeps the brick clear of the 4 mm studs while
+# it is shifted sideways.
+FINE_CORRECTION_HEIGHT = 0.008
+
+# Centre of the assembly area in the WorkBenchMark YAML files (pos[1] of every
+# structure is given around this value; lego_sim expects it around zero).
+WORKBENCHMARK_ASSEMBLY_Y = 0.148
+
+
 class LegoIK:
     def __init__(self, model, data):
         self.model = model
@@ -53,7 +74,7 @@ class LegoIK:
             self.model.jnt_range[:7, 1],
         )
 
-        for _ in range(200):
+        for _ in range(IK_MAX_ITER):
 
             self.data.qpos[:7] = q
 
@@ -104,7 +125,7 @@ class LegoIK:
 
                 if np.linalg.norm(
                     pos_error
-                ) < 0.002:
+                ) < IK_POS_TOL:
 
                     result = q.copy()
 
@@ -120,9 +141,9 @@ class LegoIK:
             else:
 
                 if (
-                    np.linalg.norm(pos_error) < 0.002
+                    np.linalg.norm(pos_error) < IK_POS_TOL
                     and
-                    np.linalg.norm(rot_error) < 0.02
+                    np.linalg.norm(rot_error) < IK_ROT_TOL
                 ):
 
                     result = q.copy()
@@ -238,7 +259,7 @@ def convert_workbenchmark_yaml(input_yaml, output_yaml):
             "target": {
                 "position": [
                     float(p[0]),
-                    float(p[1]) - 0.148,
+                    float(p[1]) - WORKBENCHMARK_ASSEMBLY_Y,
                     float(p[2]),
                 ],
                 "yaw_deg": float(r[2]),
@@ -264,33 +285,45 @@ def convert_workbenchmark_yaml(input_yaml, output_yaml):
 def move_linear(env, q_goal, steps=50):
     q_start = env.data.qpos[:7].copy()
 
-    step_size = np.linalg.norm(q_goal - q_start) / steps
+    distance = np.linalg.norm(q_goal - q_start)
 
-    path = PositionController.interpolate_linear_points(
-        q_start,
-        q_goal,
-        step_size=step_size,
-    )
+    if distance < 1e-9:
+        # The arm is already there. Interpolating a zero-length segment would
+        # divide by zero and crash with "cannot convert float NaN to integer".
+        path = [np.asarray(q_goal, dtype=float)]
+    else:
+        path = PositionController.interpolate_linear_points(
+            q_start,
+            q_goal,
+            step_size=distance / steps,
+        )
 
     for q in path:
         action = env.data.ctrl.copy()
         action[:7] = q
 
-        for _ in range(10):
+        for _ in range(STEPS_PER_WAYPOINT):
             env.step(action)
 
 
-def move_vertical(env, start_pos, target_pos, quat, tampanda):
-    steps = 50
+def move_vertical(env, start_pos, target_pos, quat, tampanda, steps=50):
+    """Follow a straight Cartesian line. Returns False if the end pose was unreachable."""
+    reached = True
 
     for pos in np.linspace(start_pos, target_pos, steps):
         q = tampanda.get_ik().solve(pos, quat)
 
         action = env.data.ctrl.copy()
-        action[:7] = q
+        # Without a solution keep the previous joint command instead of writing
+        # None into the control vector.
+        reached = q is not None
+        if reached:
+            action[:7] = q
 
-        for _ in range(10):
+        for _ in range(STEPS_PER_WAYPOINT):
             env.step(action)
+
+    return reached
 
 
 def get_brick_and_hand_pose(env, env_name):
@@ -431,19 +464,6 @@ def get_stack_target(
     )
 
     # ------------------------------------------------------------
-    # Item relative to support in benchmark
-    # ------------------------------------------------------------
-
-    relative_pos = support_target_rot.inv().apply(
-        item_target_pos - support_target_pos
-    )
-
-    relative_rot = (
-        support_target_rot.inv()
-        * item_target_rot
-    )
-
-    # ------------------------------------------------------------
     # Actual support pose in MuJoCo
     # ------------------------------------------------------------
 
@@ -465,16 +485,36 @@ def get_stack_target(
     # Apply benchmark relation to actual support
     # ------------------------------------------------------------
 
+    # A brick is indistinguishable from itself after a turn by its yaw symmetry
+    # (2x2: 90 deg, 4x2: 180 deg), and place_at() may use such an equivalent
+    # orientation. Only the support's residual misalignment, folded into that
+    # symmetry range, may be carried over to the item. Applying the full actual
+    # rotation would turn the item's offset by the same half or quarter turn and
+    # put it on the wrong side of the support.
+    support_symmetry = np.pi / 2 if support.endswith("2x2") else np.pi
+
+    yaw_error = (
+        actual_support_rot
+        * support_target_rot.inv()
+    ).as_euler("zyx")[0]
+
+    yaw_error = (
+        (yaw_error + support_symmetry / 2) % support_symmetry
+        - support_symmetry / 2
+    )
+
+    residual_rot = Rotation.from_euler("z", yaw_error)
+
     target_pos = (
         actual_support_pos
-        + actual_support_rot.apply(
-            relative_pos
+        + residual_rot.apply(
+            item_target_pos - support_target_pos
         )
     )
 
     target_rot = (
-        actual_support_rot
-        * relative_rot
+        residual_rot
+        * item_target_rot
     )
 
     return target_pos, target_rot
@@ -493,7 +533,15 @@ def place_at(
     open_gripper,
     held_relative_pos,
     held_relative_rot,
+    unload=0.0,
 ):
+    """
+    Places the held brick at target_pos / target_rot and releases it.
+
+    unload: distance (m) by which target_pos lies below the seat of the brick,
+    i.e. how far the arm presses it down. The hand backs off by this distance
+    before the gripper opens.
+    """
     env_name = name_mapping[item]
 
     relative_pos = held_relative_pos[item]
@@ -503,31 +551,52 @@ def place_at(
     # APPROACH
     # ---------------------------------------------------------
 
-    approximate_hand_pos = (
-        target_pos
-        + target_rot.apply(relative_pos)
-    )
+    # The requested orientation and its symmetry-equivalent twins (2x2: every
+    # 90 deg, 4x2: every 180 deg) describe the same placed brick and are scored
+    # identically by the benchmark. Among the reachable ones the arm takes the
+    # one with the shortest joint-space path. Besides being faster this keeps
+    # the wrist rotation small: the brick lags ~3 % behind every wrist turn and
+    # wedges itself between the fingers, so a 150 deg turn where 30 deg would
+    # do leaves it twisted by several degrees when it is released.
+    symmetry_deg = 90.0 if item.endswith("2x2") else 180.0
+    requested_rot = target_rot
+    q_current = env.data.qpos[:7].copy()
+    q_approach = None
 
-    approximate_hand_rot = (
-        target_rot * relative_rot
-    )
+    for k in range(int(round(360.0 / symmetry_deg))):
+        candidate_rot = requested_rot * Rotation.from_euler(
+            "z",
+            k * symmetry_deg,
+            degrees=True,
+        )
 
-    approximate_hand_quat = (
-        approximate_hand_rot.as_quat()[[3, 0, 1, 2]]
-    )
+        candidate_hand_pos = (
+            target_pos
+            + candidate_rot.apply(relative_pos)
+        )
 
-    approach_pos = (
-        approximate_hand_pos
-        + approach_offset
-    )
+        candidate_hand_rot = (
+            candidate_rot * relative_rot
+        )
 
-    q_approach = tampanda.get_ik().solve(
-        approach_pos,
-        approximate_hand_quat,
-    )
+        q_candidate = tampanda.get_ik().solve(
+            candidate_hand_pos + approach_offset,
+            candidate_hand_rot.as_quat()[[3, 0, 1, 2]],
+        )
+
+        if q_candidate is None:
+            continue
+
+        if (
+            q_approach is None
+            or np.linalg.norm(q_candidate - q_current)
+            < np.linalg.norm(q_approach - q_current)
+        ):
+            q_approach = q_candidate
+            target_rot = candidate_rot
 
     if q_approach is None:
-        print("PLACE: approach IK failed")
+        print("PLACE: approach IK failed", flush=True)
         return False
 
     move_linear(
@@ -597,7 +666,7 @@ def place_at(
     )
 
     if q_correct is None:
-        print("PLACE: correction IK failed")
+        print("PLACE: correction IK failed", flush=True)
         return False
 
     move_linear(
@@ -606,7 +675,7 @@ def place_at(
     )
 
     # ---------------------------------------------------------
-    # LOWER TO FINAL TARGET
+    # LOWER TO JUST ABOVE THE SEAT AND CORRECT AGAIN
     # ---------------------------------------------------------
 
     final_hand_pos = (
@@ -614,13 +683,69 @@ def place_at(
         + target_rot.apply(actual_relative_pos)
     )
 
-    move_vertical(
+    above_seat = np.array([0.0, 0.0, FINE_CORRECTION_HEIGHT])
+
+    lowered = move_vertical(
         env,
         corrected_hand_pos,
-        final_hand_pos,
+        final_hand_pos + above_seat,
         corrected_hand_quat,
         tampanda,
     )
+
+    # The correction above was measured 15 cm over the target. On the way down
+    # the brick shifts in the grasp by 1 to 2 mm, which is as much as the
+    # stability bias of a half-supported brick. Measure its horizontal error
+    # once more and move the hand by that amount before the last millimetres.
+    fine_correction = np.zeros(3)
+
+    if FINE_CORRECTION_HEIGHT > 0.0:
+        brick_pos = env.data.body(env_name).xpos.copy()
+        fine_correction[:2] = target_pos[:2] - brick_pos[:2]
+
+        move_vertical(
+            env,
+            final_hand_pos + above_seat,
+            final_hand_pos + above_seat + fine_correction,
+            corrected_hand_quat,
+            tampanda,
+            steps=5,
+        )
+
+    final_hand_pos = final_hand_pos + fine_correction
+
+    # ---------------------------------------------------------
+    # LOWER TO FINAL TARGET
+    # ---------------------------------------------------------
+
+    lowered = move_vertical(
+        env,
+        final_hand_pos + above_seat,
+        final_hand_pos,
+        corrected_hand_quat,
+        tampanda,
+        steps=10,
+    ) and lowered
+
+    # ---------------------------------------------------------
+    # UNLOAD
+    # ---------------------------------------------------------
+
+    # At the end of the descent the position-controlled arm presses the brick
+    # onto its seat (43 N for 1 mm in our measurements). Opening the gripper
+    # under that load releases it at once. A brick that rests on only half of
+    # its support then rocks by several degrees and may tip over; whether it
+    # does depends on details as small as the initial layout of the bricks.
+    # Backing off first lets the brick rest under its own weight.
+    if unload > 0.0:
+        move_vertical(
+            env,
+            final_hand_pos,
+            final_hand_pos + np.array([0.0, 0.0, unload]),
+            corrected_hand_quat,
+            tampanda,
+            steps=5,
+        )
 
     # ---------------------------------------------------------
     # RELEASE
@@ -658,4 +783,7 @@ def place_at(
         HOME_Q,
     )
 
-    return True
+    if not lowered:
+        print("PLACE: target pose not reachable", flush=True)
+
+    return lowered
